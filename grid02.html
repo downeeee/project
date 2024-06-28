@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        ul,ol,li{list-style: none;}
+
+        #wrap{margin: 50px; display: grid; gap: 20px; grid-template-columns: 200px auto 200px; 
+                grid-template-areas:"header header header" 
+                                    "side1 cont side2"
+                                    "footer footer footer";}
+
+        .box{background-color: tomato; border-radius: 20px; padding: 20px; color: white;}
+
+        .header{grid-area: header; display: flex; justify-content: space-between; align-items: center;}
+
+            .logo{width: 100px; height: 100px; border: 1px solid white; display: flex; justify-content: center; align-items: center;}
+            .logo a{}
+
+            .nav{}
+            .main{display: flex;}
+            .main li{}
+            .main li a{display: block; padding: 5px 10px;}
+            
+
+        .side1{grid-area: side1;}
+
+        .side2{grid-area: side2;}
+
+        .contents{grid-area: cont;}
+
+        .footer{grid-area: footer;}
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <header class="box header">
+            <h1 class="logo"><a href="#">logo</a></h1>
+            <nav class="nav">
+                <ul class="main">
+                    <li><a href="#">menu1</a></li>
+                    <li><a href="#">menu2</a></li>
+                    <li><a href="#">menu3</a></li>
+                    <li><a href="#">menu04</a></li>
+                </ul>
+            </nav>
+        </header>
+        <aside class="box sode1">side bar1</aside>
+        <section class="box contents">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio incidunt quod
+            necessitatibus nemo non, molestias tempora similique molestiae sint earum eaque, omnis nulla ipsam fugit at
+            accusantium consectetur blanditiis. Nobis.</section>
+
+            <aside class="box side2">side bar2</aside>
+            <footer class="box footer">footer</footer>
+    </div>
+</body>
+
+</html>
