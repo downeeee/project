@@ -3,68 +3,105 @@
 ul,li,ol{list-style: none;}
 a{text-decoration: none; color: inherit;}
 
-.banner{width: 100%; height: 150px; background-color: aquamarine;justify-content: space-between;display: flex;
-        align-items: center;justify-content: space-between;}
+
+
+.banner{width: 100%; height: 150px; background-color: rgb(255, 255, 255);justify-content: space-between;display: flex;
+        align-items: center;justify-content: space-between;  position: fixed;}
 
 .menu01{display: flex;
         width: 1200px; margin: 0 auto;
         justify-content: space-between;
-
+        
         }
+.menu01:hover .menu_1{background-color: white;}
 
 
-.menu01 > li{width: 150px; background-color: bisque; border-radius: 15px; text-align: center;
-             position: relative;}
+.menu01 > li{width: 150px; background-color: rgb(255, 255, 255); border-radius: 15px; text-align: center;
+                position: relative;}
 
-.menu01 > li > a{display: block; height: 50px; line-height: 50px; text-align: center;}
+.menu01 > li > a{display: block; height: 50px; line-height: 50px; text-align: center; background-color:rgb(116, 181, 255); color: white; font-weight: bolder;
+                border-radius: 20px;}
 
-.menu_1{position: absolute; left: 0; top: 60px;}
-
-.menu_1 li{}
-
-.menu_1 li a{}
+/* .menu_1{position: absolute; left: 0; top: 60px;} */
 
 
 
-.main_img{background-color: bisque; width: 100%; height: 600px;}
+
+
+
+
+.main_img{background-image:url(../img/BENNER.jpg); width: 100%; height: 600px;}
 
 h1{margin: 50px auto; text-align: center;font-size: 40px;}
 
 
-.mm_1{width: 1600px; height: 200px; background-color: blueviolet; margin: 0 auto;display: flex; 
+.mm_1{width: 1600px; height: 200px; background-color: rgb(255, 255, 255); margin: 0 auto;display: flex; 
         line-height: 300px;justify-content: space-around;}
 
-.mm_1 > li > a{height: 100px; background-color: burlywood   ; padding: 20px; font-size: 30px;}
+.mm_1 > li > a{height: 100px; /* background-color: rgb(116, 181, 255)  ;border-radius: 40px; */ 
+                border-bottom:4px solid rgb(116, 181, 255); font-size: 30px;}
 
 
 /* .middle_box{width: 1199px; height: 600px; margin: 0 auto; background-color: cornflowerblue;} */
 
-.middle_icon{/* idth: 240px; height: 240px; */ background-color: darkorange; display: flex;flex-wrap: wrap; 
+.middle_icon{/* idth: 240px; height: 240px; */  display: flex;flex-wrap: wrap; 
                 justify-content: space-around;width: 1199px; height: 600px; margin: 0px auto;}
 
-.middle_icon > li > a{width: 240px; height: 240px;background-color: darkslateblue; display: block;
+.middle_icon > li > a{width: 240px; height: 240px; display: block;
                         margin: 30px 0px;}
 
-.section{width: 100%; height: 400px; background-color: darksalmon;}
+.menu01:hover .menu_1{display: block;}
+.section{width: 100%; height: 400px; background-color: rgb(116, 181, 255)}
 
-.bottom_menu{width: 100%; height: 600px; background-color: darkgray;}
+.bottom_menu{width: 100%; height: 600px; background-color: rgb(255, 255, 255);}
 
-.bottom_menu_wrap{width: 1200px; height: 600px; background-color: darkmagenta; margin: 0 auto;display: flex;
-                flex-wrap: wrap; justify-content: space-around;}
+.bottom_menu_wrap{width: 1000px; height: 600px; background-color: rgb(255, 255, 255); margin: 0 auto;display: flex;
+                flex-wrap: wrap; justify-content: space-around; }
 
-.bottom_menu_wrap > div{width: 500px; height: 250px; background-color: rgb(255, 205, 188); margin-top: 25px;
-                        border-radius: 30px;}
+.bottom_menu_wrap > div{width: 300px; height: 250px; background-color: rgb(221, 139, 139); margin: 10px 50px;
+                        border-radius: 30px;overflow: hidden;}
 
-.footer{width: 100%; height: 200px; background-color: violet; }
-
-
-
-
-
-
+.footer{width: 100%; height: 200px; background: rgb(103, 169, 255); /* CSS3를 지원하지 않는 브라우저용 */
+  
+        
+        background: linear-gradient(45deg, rgb(139, 160, 255), #fff); /* 45도 (오른쪽 위)방향으로, 빨간색에서 흰색으로 */}
 
 
+.middle_icon{text-align: center;padding: 50px;}
+
+h1{color: rgb(116, 181, 255);}
+
+.icon1{background-image: url(../img/main-icon1.png); background-repeat: no-repeat;}
+.icon2{background-image: url(../img/main-icon3.png);background-repeat: no-repeat;}
+.icon3{background-image: url(../img/main-icon5.png); background-repeat: no-repeat;}
+.icon4{background-image: url(../img/main-icon8.png);background-repeat: no-repeat;}
+.icon5{background-image: url(../img/main-icon7.png); background-repeat: no-repeat;}
+.icon6{background-repeat: no-repeat; background-image: url(../img/main-icon2.png);}
+.icon7{background-repeat: no-repeat;background-image: url(../img/main-icon4.png);}
+.icon8{background-repeat: no-repeat;background-image: url(../img/main-icon6.png);}
 
 
 
-.footer02{width: 100%; height: 300px; background-color: coral;}
+.location iframe{width: 100%; height: 100%; }
+
+.nav:hover .sub{display: block;}
+
+.sub{position: absolute;left: 0; top: 140px; width: 120%;display: none; z-index: 10;}
+
+.sub li{}
+
+.sub li a{display: block; height: 20px; line-height: 5px; /* font-weight:  bold; */ 
+            color: #ffffff; font-size: 20px;}
+
+.sub li a:hover{text-decoration: underline;}
+
+
+
+
+
+
+
+.footer02{width: 100%; height: 300px; background-color: rgb(100, 100, 100); color:  white; display: flex;
+        }
+
+.foooter_menu{padding: 30px;}
