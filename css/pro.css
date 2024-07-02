@@ -101,7 +101,15 @@ h1{color: rgb(116, 181, 255);}
 
 
 
+
+
 .footer02{width: 100%; height: 300px; background-color: rgb(100, 100, 100); color:  white; display: flex;
         }
 
 .foooter_menu{padding: 30px;}
+
+.top{width: 120px; position: fixed;left: calc(50% + (1168px / 2) + 50px);  top: 500px;}
+
+.top a{display: block; text-align: center;margin: 10px 0;}
+
+.top .pos{ position: sticky; top: 700px;}
